@@ -8,6 +8,8 @@ def factorial(n):
         n -= 1  # Decrement n in each iteration
     return result
 
-f = factorial(int(sys.argv[1]))
-print(f)
-
+if len(sys.argv) > 1:
+    input_number = int(sys.argv[1])
+    f = factorial(input_number)
+    print(f)
+    
